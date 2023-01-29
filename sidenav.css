@@ -1,0 +1,106 @@
+body {
+    background-color: #fbfbfb;
+  }
+  @media (min-width: 991.98px) {
+    main {
+      padding-left: 250px;
+    }
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 58px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 240px;
+    z-index: 600;
+  }
+  
+  /* @media (max-width: 991.98px) {
+    .sidebar {
+      width: 100%;
+    }
+  } */
+  .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+  }
+  
+  .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+  }
+
+  .ul-li {
+    color: white;
+  }
+
+  
+
+  input[type=checkbox]:checked{
+    background-color:blueviolet !important;
+}
+
+input[type=radio]:checked{
+  background-color:blueviolet !important;
+}
+
+.hover:hover {
+  background-color: rgba(138, 43, 228, 0.1);
+}
+
+.side-bar:hover {
+  opacity: 0.7;
+  /* background-color: rgba(138, 43, 228, 0.1); */
+}
+
+.nav-tabs .nav-item .nav-link:hover{
+  /* background-color: #0080FF; */
+  /* color:blueviolet; */
+  /* border: none;
+  border-bottom: 2px solid blueviolet; */
+  background-color: rgba(138, 43, 228, 0.1);
+  /* opacity: 0.7; */
+}
+
+.nav-tabs .nav-item .nav-link.active{
+  /* background-color: #0080FF; */
+  /* color:blueviolet; */
+  border: none;
+  border-bottom: 2px solid blueviolet;
+}
+
+.nav-tabs .nav-item .nav-link.active div{
+  /* background-color: #0080FF; */
+  color:blueviolet;
+  font-weight: bold;
+}
+
+.nav-tabs .nav-item .nav-link.active span{
+  /* background-color: #0080FF; */
+  color:blueviolet;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 700px) {
+  .unnesecary-links {
+    display: none;
+  }
+}
+
+.accordion-button:not(.collapsed) {
+  /* color: #0c63e4; */
+  background-color: white;
+  border: none;
+  outline: none;
+}
+
+

@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../sidenav.css">
+
+</head>
+
+<body>
+  
+  <header>
+    <!-- Sidebar -->
+    <nav id="sidebarMenu" class="collapse d-lg-block sidebar collapse bg-white" style="overflow: scroll;">
+      <div class="position-sticky">
+        <div class="list-group list-group-flush mx-3 mt-4">
+
+          <!-- Interfaces -->
+          <div class="interfaces my-3">
+            <h3 class="mx-3">Interfaces</h3>
+
+            <!-- Overview -->
+            <a class="mx-3" href="#" style="padding-left: 3px; color: black; text-decoration: none;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm7.5-6.923c-.67.204-1.335.82-1.887 1.855A7.97 7.97 0 0 0 5.145 4H7.5V1.077zM4.09 4a9.267 9.267 0 0 1 .64-1.539 6.7 6.7 0 0 1 .597-.933A7.025 7.025 0 0 0 2.255 4H4.09zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a6.958 6.958 0 0 0-.656 2.5h2.49zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5H4.847zM8.5 5v2.5h2.99a12.495 12.495 0 0 0-.337-2.5H8.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5H4.51zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5H8.5zM5.145 12c.138.386.295.744.468 1.068.552 1.035 1.218 1.65 1.887 1.855V12H5.145zm.182 2.472a6.696 6.696 0 0 1-.597-.933A9.268 9.268 0 0 1 4.09 12H2.255a7.024 7.024 0 0 0 3.072 2.472zM3.82 11a13.652 13.652 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5H3.82zm6.853 3.472A7.024 7.024 0 0 0 13.745 12H11.91a9.27 9.27 0 0 1-.64 1.539 6.688 6.688 0 0 1-.597.933zM8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855.173-.324.33-.682.468-1.068H8.5zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.65 13.65 0 0 1-.312 2.5zm2.802-3.5a6.959 6.959 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5h2.49zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7.024 7.024 0 0 0-3.072-2.472c.218.284.418.598.597.933zM10.855 4a7.966 7.966 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4h2.355z" />
+              </svg> <span class="mx-3">Overview</span>
+            </a>
+
+            <div class="accordion accordion-flush" id="accordion-dashboards">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-dashboards">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#dashboards-div" aria-expanded="false" aria-controls="dashboards-div">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-microsoft" viewBox="0 0 16 16">
+                      <path d="M7.462 0H0v7.19h7.462V0zM16 0H8.538v7.19H16V0zM7.462 8.211H0V16h7.462V8.211zm8.538 0H8.538V16H16V8.211z"/>
+                    </svg> <span class="mx-3">Dashboards</span>
+                  </button>
+                </h2>
+                <div id="dashboards-div" class="accordion-collapse collapse px-3" aria-labelledby="heading-page" data-bs-parent="#accordion-dashboards">
+                  <div class="account-content px-3 ">
+                      <div class="my-3"><a href="#"
+                          style="color: black; text-decoration: none;">Billing</a></div>
+                      <div class="my-3"><a href="#"
+                          style="color: black; text-decoration: none;">Notification</a></div>
+                      <div class="my-3"><a href="#"
+                          style="color: black; text-decoration: none;">Profile</a></div>
+                      <div class="my-3"><a href="#"
+                          style="color: black; text-decoration: none;">Security</a></div>
+                          <div class="my-3"><a href="#"
+                              style="color: black; text-decoration: none;">Profile</a></div>
+                          <div class="my-3"><a href="#"
+                              style="color: black; text-decoration: none;">Security</a></div>
+                  </div>
+              </div>
+              </div>
+          </div>
+  
+          <div class="accordion accordion-flush" id="accordion-layouts">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-layouts">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#layouts-div" aria-expanded="false" aria-controls="layouts-div">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-layout-text-window-reverse" viewBox="0 0 16 16">
+                      <path d="M13 6.5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm0 3a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5zm-.5 2.5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1h5z"/>
+                      <path d="M14 0a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12zM2 1a1 1 0 0 0-1 1v1h14V2a1 1 0 0 0-1-1H2zM1 4v10a1 1 0 0 0 1 1h2V4H1zm4 0v11h9a1 1 0 0 0 1-1V4H5z"/>
+                    </svg> <span class="mx-3">Layouts</span>
+                  </button>
+                </h2>
+                <div id="layouts-div" class="accordion-collapse collapse px-3" aria-labelledby="heading-layouts" data-bs-parent="#accordion-layouts">
+                  <div class="account-content px-3">
+                      <div class="my-3"><a href="#"
+                          style="color: black; text-decoration: none;">Billing</a></div>
+                      <div class="my-3"><a href="#"
+                          style="color: black; text-decoration: none;">Notification</a></div>
+                      <div class="my-3"><a href="#"
+                          style="color: black; text-decoration: none;">Profile</a></div>
+                  </div>
+              </div>
+              </div>
+          </div>
+  
+          <div class="accordion accordion-flush" id="accordion-pages">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="heading-page">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#page-div" aria-expanded="false" aria-controls="page-div">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-break-fill" viewBox="0 0 16 16">
+                      <path d="M4 0h5.293A1 1 0 0 1 10 .293L13.707 4a1 1 0 0 1 .293.707V9H2V2a2 2 0 0 1 2-2zm5.5 1.5v2a1 1 0 0 0 1 1h2l-3-3zM2 12h12v2a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-2zM.5 10a.5.5 0 0 0 0 1h15a.5.5 0 0 0 0-1H.5z"/>
+                    </svg> <span class="mx-3">Pages</span>
+                    
+                  </button>
+                </h2>
+                <div id="page-div" class="accordion-collapse collapse px-3" aria-labelledby="heading-page" data-bs-parent="#accordion-pages">
+                  <!-- <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div> -->
+                  <div class="accordion accordion-flush" id="accordion-account">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-account">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#account-div" aria-expanded="false" aria-controls="account-div">
+                            Accounts
+                          </button>
+                        </h2>
+                        <div id="account-div" class="accordion-collapse collapse px-3" aria-labelledby="heading-account" data-bs-parent="#accordion-account">
+                          <!-- <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div> -->
+                          <div class="account-content">
+                              <div class="my-3 px-3"><a href="./billing.html"
+                                  style="color: black; text-decoration: none;">Billing</a></div>
+                              <div class="my-3 px-3"><a href="./notification.html"
+                                  style="color: black; text-decoration: none;">Notification</a></div>
+                              <div class="my-3 px-3"><a href="./profile.html"
+                                  style="color: black; text-decoration: none;">Profile</a></div>
+                              <div class="my-3 px-3"><a href="./security.html"
+                                  style="color: black; text-decoration: none;">Security</a></div>
+                                  
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+  
+                  <!-- authentication -->
+                  <div class="accordion accordion-flush" id="accordion-authentication">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header" id="heading-authentication">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#authentication-div" aria-expanded="false" aria-controls="authentication-div">
+                            Authentication
+                          </button>
+                        </h2>
+                        <div id="authentication-div" class="accordion-collapse collapse px-3" aria-labelledby="heading-authentication" data-bs-parent="#accordion-authentication">
+                          <!-- <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div> -->
+                          <div class="authentication-content">
+                              
+                                  <div class="my-3 px-3"><a href="#"
+                                      style="color: black; text-decoration: none;">Billing</a></div>
+                                  <div class="my-3 px-3"><a href="#"
+                                      style="color: black; text-decoration: none;">Notification</a></div>
+                                  <div class="my-3 px-3"><a href="#"
+                                      style="color: black; text-decoration: none;">Profile</a></div>
+                                      <div class="my-3 px-3"><a href="#"
+                                          style="color: black; text-decoration: none;">Notification</a></div>
+                                      <div class="my-3 px-3"><a href="#"
+                                          style="color: black; text-decoration: none;">Profile</a></div>
+                          </div>
+                      </div>
+                      </div>
+                  </div>
+  
+                  <div class="my-3" style="padding: 0 20px;"><a href="#"
+                      style="color: black; text-decoration: none;">Blank page</a></div>
+  
+                      <!-- error -->
+                      <div class="accordion accordion-flush" id="accordion-error">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-error">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#error-div" aria-expanded="false" aria-controls="error-div">
+                                Error
+                              </button>
+                            </h2>
+                            <div id="error-div" class="accordion-collapse collapse px-3" aria-labelledby="heading-layouts" data-bs-parent="#accordion-layouts">
+                              <div class="error-content">
+                                  <div class="my-3 px-3"><a href="#"
+                                      style="color: black; text-decoration: none;">Billing</a></div>
+                                  <div class="my-3 px-3"><a href="#"
+                                      style="color: black; text-decoration: none;">Notification</a></div>
+                                  <div class="my-3 px-3"><a href="#"
+                                      style="color: black; text-decoration: none;">Profile</a></div>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+  
+                      <!-- invoice -->
+                      <div class="my-3" style="padding: 0 20px;"><a href="#"
+                          style="color: black; text-decoration: none;">Invoice</a></div>
+  
+                      <!-- Knowledgebase -->
+                      <div class="accordion accordion-flush" id="accordion-knowledge">
+                          <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading-knowledge">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#knowledge-div" aria-expanded="false" aria-controls="knowledge-div">
+                                Knowledgebase
+                              </button>
+                            </h2>
+                            <div id="knowledge-div" class="accordion-collapse collapse px-3" aria-labelledby="heading-knowledge" data-bs-parent="#accordion-knowledge">
+                              <div class="knowledge-content">
+                                  <div class="my-3 px-3"><a href="#"
+                                      style="color: black; text-decoration: none;">Billing</a></div>
+                                  <div class="my-3 px-3"><a href="#"
+                                      style="color: black; text-decoration: none;">Notification</a></div>
+                                  <div class="my-3 px-3"><a href="#"
+                                      style="color: black; text-decoration: none;">Profile</a></div>
+                              </div>
+                          </div>
+                          </div>
+                      </div>
+  
+                      <!-- pricing -->
+                      <div class="my-3" style="padding: 0 20px;"><a href="#"
+                          style="color: black; text-decoration: none;">Pricing</a></div>
+
+          </div>
+
+
+          <hr>
+
+          <!-- UI Toolkits -->
+          <div class="ui-toolkits my-3">
+            <h3 class="mx-3">UI Toolkits</h3>
+
+            <div class="accordion accordion-flush" id="accordionFlushExample" style="">
+
+              <!-- Components -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Components" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-motherboard" viewBox="0 0 16 16">
+                      <path
+                        d="M11.5 2a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5Zm2 0a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5Zm-10 8a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6Zm0 2a.5.5 0 0 0 0 1h6a.5.5 0 0 0 0-1h-6ZM5 3a1 1 0 0 0-1 1h-.5a.5.5 0 0 0 0 1H4v1h-.5a.5.5 0 0 0 0 1H4a1 1 0 0 0 1 1v.5a.5.5 0 0 0 1 0V8h1v.5a.5.5 0 0 0 1 0V8a1 1 0 0 0 1-1h.5a.5.5 0 0 0 0-1H9V5h.5a.5.5 0 0 0 0-1H9a1 1 0 0 0-1-1v-.5a.5.5 0 0 0-1 0V3H6v-.5a.5.5 0 0 0-1 0V3Zm0 1h3v3H5V4Zm6.5 7a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-2Z" />
+                      <path
+                        d="M1 2a2 2 0 0 1 2-2h11a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-2H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 9H1V8H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6H1V5H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 2H1Zm1 11a1 1 0 0 0 1 1h11a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v11Z" />
+                    </svg><span class="mx-3">Components</span>
+                  </button>
+                </h2>
+                <div id="Components" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Alerts</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Badges</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Buttons</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Cards</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Chips</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Dropdowns</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Icon
+                        Buttons</a></div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Modals</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#"
+                        style="color: black; text-decoration: none;">Navigation</a></div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Progress</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Spinners</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Tooltips</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Content -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Content" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-body-text" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M0 .5A.5.5 0 0 1 .5 0h4a.5.5 0 0 1 0 1h-4A.5.5 0 0 1 0 .5Zm0 2A.5.5 0 0 1 .5 2h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm9 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm-9 2A.5.5 0 0 1 .5 4h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm5 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm7 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5Zm-12 2A.5.5 0 0 1 .5 6h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5Zm8 0a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm-8 2A.5.5 0 0 1 .5 8h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5Zm7 0a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5Zm-7 2a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 0 1h-8a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5Z" />
+                    </svg><span class="mx-3">Content</span>
+                  </button>
+                </h2>
+                <div id="Content" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Icons</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Tables</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#"
+                        style="color: black; text-decoration: none;">Typography</a></div>
+
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Forms -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Forms" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-code-square" viewBox="0 0 16 16">
+                      <path
+                        d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                      <path
+                        d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z" />
+                    </svg><span class="mx-3">Forms</span>
+                  </button>
+                </h2>
+                <div id="Forms" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Inputs</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Checks &
+                        Radio</a></div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Input
+                        Groups</a></div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Range</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Select</a>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <!-- Utilities -->
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#Utilities" aria-expanded="false" aria-controls="flush-collapseThree">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-wrench" viewBox="0 0 16 16">
+                      <path
+                        d="M.102 2.223A3.004 3.004 0 0 0 3.78 5.897l6.341 6.252A3.003 3.003 0 0 0 13 16a3 3 0 1 0-.851-5.878L5.897 3.781A3.004 3.004 0 0 0 2.223.1l2.141 2.142L4 4l-1.757.364L.102 2.223zm13.37 9.019.528.026.287.445.445.287.026.529L15 13l-.242.471-.026.529-.445.287-.287.445-.529.026L13 15l-.471-.242-.529-.026-.287-.445-.445-.287-.026-.529L11 13l.242-.471.026-.529.445-.287.287-.445.529-.026L13 11l.471.242z" />
+                    </svg><span class="mx-3">Utilities</span>
+                  </button>
+                </h2>
+                <div id="Utilities" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    <div class="my-3"><a class="p-3" style="color: black; text-decoration: none;"
+                        href="#">Background</a></div>
+                    <div class="my-3"><a class="p-3" style="color: black; text-decoration: none;" href="#">Borders</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Ripples</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Shadows</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#" style="color: black; text-decoration: none;">Text</a>
+                    </div>
+                    <div class="my-3"><a class="p-3" href="#"
+                        style="color: black; text-decoration: none;">Transforms</a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <hr>
+
+
+
+        </div>
+      </div>
+    </nav>
+    <!-- Sidebar -->
+
+    <!-- Navbar -->
+    <nav id="main-navbar" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <!-- Container wrapper -->
+      <div class="container-fluid">
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
+          aria-controls="sidebarMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">
+          <h5>Material Admin Pro</h5>
+        </a>
+
+
+        <!-- Right links -->
+        <ul class="navbar-nav ms-auto d-flex flex-row text-white ul-li">
+          
+          <li class="nav-item unnesecary-links">
+            <a href="" class="nav-link" style="color: white;">Overview</a>
+          </li>
+          <li class="nav-item unnesecary-links">
+            <a href="" class="nav-link" style="color: white;">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link me-md-6 me-sm-3" style="color: white;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-envelope"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link me-md-6 me-sm-3" style="color: white;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bell"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link" style="color: white;">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+  </header>
+  
+
+  <!--Main layout-->
+  <main style="margin-top: 58px;">
+
+    <!-- Content here -->
+
+    <!-- main layout navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="background-color: black;">
+      <div class="container">
+
+        <h5 class="navbar-brand">Account Setting - Security</h5>
+      </div>
+
+    </nav>
+
+    <div class="container">
+
+      <!-- Tabs -->
+      <ul class="nav nav-tabs nav-justified" id="nav-tab" role="tablist">
+        <li class="nav-item">
+
+          <a class="nav-link mt-5" id="nav-billing-tab" style="color: black;" href="./billing.html"
+             role="tab"
+            aria-selected="false">
+
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-house"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z" />
+              </svg>
+            </div>
+            <span>Billing</span>
+            
+
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mt-5" id="nav-notification-tab" 
+            role="tab" aria-selected="false"
+            style="font-size: 20px; color: black;" href="./notification.html">
+            <div><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-bell"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2zM8 1.918l-.797.161A4.002 4.002 0 0 0 4 6c0 .628-.134 2.197-.459 3.742-.16.767-.376 1.566-.663 2.258h10.244c-.287-.692-.502-1.49-.663-2.258C12.134 8.197 12 6.628 12 6a4.002 4.002 0 0 0-3.203-3.92L8 1.917zM14.22 12c.223.447.481.801.78 1H1c.299-.199.557-.553.78-1C2.68 10.2 3 6.88 3 6c0-2.42 1.72-4.44 4.005-4.901a1 1 0 1 1 1.99 0A5.002 5.002 0 0 1 13 6c0 .88.32 4.2 1.22 6z" />
+              </svg>
+            </div>
+            <span>Notifications</span>
+            
+            
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link mt-5" id="nav-profile-tab" role="tab"
+             aria-selected="false" style="font-size: 20px; color: black;"
+            href="./profile.html">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-person"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z" />
+              </svg>
+            </div>
+            <span>Profile</span>
+            
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active mt-5" id="nav-security-tab" data-bs-toggle="tab" data-bs-target="#nav-security" role="tab"
+            aria-controls="nav-security" aria-selected="true" style="font-size: 20px; color: black;"
+            href="#">
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-lock"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zM5 8h6a1 1 0 0 1 1 1v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z" />
+              </svg>
+            </div>
+            <span>Security</span>
+            
+          </a>
+        </li>
+      </ul>
+
+      <!-- Tab Content -->
+      <div class="tab-content" id="nav-tabContent">
+        <div class="tab-pane fade p-3" id="nav-billing" role="tabpanel" aria-labelledby="nav-billing-tab">
+          <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 align-items-stretch g-4 py-5">
+            <div class="col">
+              <div class="card">
+
+                <div class="card-body my-3">
+                  <h6 class="card-subtitle text-muted">CURRENT MONTHLY BILL</h6>
+                  <h3>$20.00</h3>
+                </div>
+                <div class="card-footer text-center text-muted">
+
+                  <a href="#" class="text-muted" style="text-decoration: none;">
+                    <span style="color: blueviolet;"> Switch to monthly billing</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color: blueviolet;" width="16" height="16"
+                      fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card">
+
+                <div class="card-body my-3">
+                  <h6 class="card-subtitle text-muted">NEXT PAYMENT DUE</h6>
+                  <h3>July 15</h3>
+                </div>
+                <div class="card-footer text-center text-muted">
+
+                  <a href="#" class="text-muted" style="text-decoration: none;">
+                    <span style="color: blueviolet;">View payment history</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" style="color: blueviolet;" width="16" height="16"
+                      fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card" style="background-color: blueviolet; color: white;">
+
+                <div class="card-body my-3">
+                  <h6 class="card-subtitle text-light">CURRENT PLAN</h6>
+                  <h3>Freelancer</h3>
+                </div>
+                <div class="card-footer text-center text-muted">
+
+                  <a href="#" class="text-muted" style="text-decoration: none;">
+                    <span style="color: white;">Upgrade plan</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                      class="bi bi-upload text-white" viewBox="0 0 16 16">
+                      <path
+                        d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                      <path
+                        d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <h4>PAYMENT METHODS</h4>
+          <div class="row row-cols-1 row-cols-lg-2 row-cols-md-2 align-items-stretch g-4 py-5">
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body p-4 d-flex align-items-center">
+                  <img src="../images/Mastercard-logo.svg.png" alt="Mastercard Icon" style="height: 48px">
+                  <div class="ms-3">
+                    <div class="display-6">Mastercard •••• 1234</div>
+                    <div class="small text-muted">Expires 01/25</div>
+                  </div>
+                </div>
+                <div class="btn-toolbar justify-content-between p-3" role="toolbar"
+                  aria-label="Toolbar with button groups">
+                  <div class="input-group">
+                    <div><span class="badge bg-dark ms-2">Default</span></div>
+                  </div>
+                  <div class="btn-group" role="group" aria-label="First group">
+                    <button class="btn btn-text-primary mdc-ripple-upgraded" style="color: blueviolet;"
+                      type="button">Edit</button>
+                    <button class="btn btn-text-primary mdc-ripple-upgraded" style="color: blueviolet;"
+                      type="button">Remove</button>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body p-4 d-flex align-items-center">
+                  <img src="../images/Visa.svg.png" alt="Mastercard Icon" style="height: 48px">
+                  <div class="ms-3">
+                    <div class="display-6">Visa •••• 1234</div>
+                    <div class="small text-muted">Expires 01/25</div>
+                  </div>
+                </div>
+                <div class="btn-toolbar justify-content-between p-3" role="toolbar"
+                  aria-label="Toolbar with button groups">
+                  <div class="input-group">
+                  </div>
+                  <div class="btn-group" role="group" aria-label="First group">
+                    <button class="btn btn-text-primary mdc-ripple-upgraded" style="color: blueviolet;"
+                      type="button">Edit</button>
+                    <button class="btn btn-text-primary mdc-ripple-upgraded" style="color: blueviolet;"
+                      type="button">Remove</button>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div class="card-body p-4 d-flex align-items-center">
+                  <img src="../images/american-express-logo.webp" alt="Mastercard Icon" style="height: 48px">
+                  <div class="ms-3">
+                    <div class="display-6">American Express •••• 1234</div>
+                    <div class="small text-muted">Expires 01/25</div>
+                  </div>
+                </div>
+                <div class="btn-toolbar justify-content-between p-3" role="toolbar"
+                  aria-label="Toolbar with button groups">
+                  <div class="input-group">
+                  </div>
+                  <div class="btn-group" role="group" aria-label="First group">
+                    <button class="btn btn-text-primary mdc-ripple-upgraded" style="color: blueviolet;"
+                      type="button">Edit</button>
+                    <button class="btn btn-text-primary mdc-ripple-upgraded" style="color: blueviolet;"
+                      type="button">Remove</button>
+                  </div>
+                </div>
+
+
+
+              </div>
+            </div>
+
+            <div class="col">
+              <div class="card h-100">
+                <div style="margin: auto auto; color: blueviolet;">
+                  <a href="#" style="text-decoration: none;"> <svg xmlns="http://www.w3.org/2000/svg"
+                      style="color: blueviolet;" width="20" height="20" fill="currentColor" class="bi bi-plus"
+                      viewBox="0 0 16 16">
+                      <path
+                        d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                    </svg>
+                    <span style="color: blueviolet;"> Add payment method</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <h4>PAYMENT HISTORY</h4>
+          <div class="table py-5 px-2">
+            <table class="table table-striped table-hover">
+              <thead class="table-dark">
+                <tr>
+                  <th scope="col">Transaction ID</th>
+                  <th scope="col">Date</th>
+                  <th scope="col">Amount</th>
+                  <th scope="col">Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>#39201</th>
+                  <td>06/15/2022</td>
+                  <td>$29.99</td>
+                  <td>
+                    <div><span class="badge" style="background-color: blueviolet;">Pending</span></div>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>#39201</th>
+                  <td>06/15/2022</td>
+                  <td>$29.99</td>
+                  <td>
+                    <div><span class="badge bg-success">Paid</span></div>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>#39201</th>
+                  <td>06/15/2022</td>
+                  <td>$29.99</td>
+                  <td>
+                    <div><span class="badge bg-success">Paid</span></div>
+
+                  </td>
+                </tr>
+                <tr>
+                  <td>#39201</th>
+                  <td>06/15/2022</td>
+                  <td>$29.99</td>
+                  <td>
+                    <div><span class="badge bg-success">Paid</span></div>
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+
+          </div>
+
+
+        </div>
+
+        <!-- notification content -->
+        <div class="tab-pane fade p-3" id="nav-notificatiion" role="tabpanel" aria-labelledby="nav-notification-tab">
+          <div class="row g-4">
+            <div class="col col-md-7">
+              <div class="card p-5">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5> Email Notifications</h5>
+                  </div>
+                  <div class="card-subtitle">
+                    Choose which types of email updates you will receive
+                  </div>
+
+                  <div class="mb-3">
+                    <input type="email" class="form-control" disabled="" id="floatingInput"
+                      placeholder="name@example.com">
+                  </div>
+                  <div class="checkbox p-3">
+                    <div class="form-check py-3">
+                      <input class="form-check-input" type="checkbox" value="" id="Check-1" checked>
+                      <label class="form-check-label" for="Check-1">
+                        Change made to your account
+                      </label>
+                    </div>
+                    <div class="form-check py-3">
+                      <input class="form-check-input" type="checkbox" value="" id="Check-2" checked>
+                      <label class="form-check-label" for="Check-2">
+                        Changes are made to group you're part of
+                      </label>
+                    </div>
+                    <div class="form-check py-3">
+                      <input class="form-check-input" type="checkbox" value="" id="Check-3" checked>
+                      <label class="form-check-label" for="Check-3">
+                        Product updates for products you've purchased or starred
+                      </label>
+                    </div>
+                    <div class="form-check py-3">
+                      <input class="form-check-input" type="checkbox" value="" id="Check-4" checked>
+                      <label class="form-check-label" for="Check-4">
+                        Information on and promotional offers
+                      </label>
+                    </div>
+                    <div class="form-check py-3">
+                      <input class="form-check-input" type="checkbox" value="" id="Check-5">
+                      <label class="form-check-label" for="Check-5">
+                        Security and account alerts
+                      </label>
+                    </div>
+                    <div class="form-check py-3">
+                      <input class="form-check-input" type="checkbox" disabled value="" id="Check-6" checked>
+                      <label class="form-check-label" for="Check-6">
+                        Checked checkbox
+                      </label>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+            </div>
+
+            <div class="col col-md-4">
+              <div class="card p-5">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5> Notifications preferences</h5>
+                  </div>
+                  <div class="card-subtitle">
+                    Choose which types of email updates you will receive
+                  </div>
+                  <div class="checkbox p-3">
+                    <div class="form-check py-3">
+                      <input class="form-check-input" type="checkbox" value="" id="Check-1" checked>
+                      <label class="form-check-label" for="Check-1">
+                        Change made to your account
+                      </label>
+                    </div>
+                    <div class="form-check py-3">
+                      <input class="form-check-input" type="checkbox" value="" id="Check-2" checked>
+                      <label class="form-check-label" for="Check-2">
+                        Changes are made to group you're part of
+                      </label>
+                    </div>
+                  </div>
+                  <a href="#" style="text-decoration: none;">
+                    <h6 style="font-size: 15PX;" class="text-danger">UNSUBSCRIBE FROM ALL NOTIFICATIONS</h6>
+                  </a>
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <div class="col col-md-7">
+              <div class="card p-5">
+
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5> Push Notifications</h5>
+                  </div>
+                  <div class="card-subtitle">
+                    Choose which types of email updates you will receive
+                  </div>
+
+                  <div class="mb-3">
+                    <input type="email" class="form-control" disabled="" id="floatingInput"
+                      placeholder="+251-904791108">
+                  </div>
+                  <div class="checkbox p-3">
+                    <div class="form-check py-3">
+                      <input class="form-check-input" type="checkbox" value="" id="Check-1" checked>
+                      <label class="form-check-label" for="Check-1">
+                        Change made to your account
+                      </label>
+                    </div>
+                    <div class="form-check py-3">
+                      <input class="form-check-input" type="checkbox" value="" id="Check-2" checked>
+                      <label class="form-check-label" for="Check-2">
+                        Changes are made to group you're part of
+                      </label>
+                    </div>
+                    <div class="form-check py-3">
+                      <input class="form-check-input" type="checkbox" value="" id="Check-3" checked>
+                      <label class="form-check-label" for="Check-3">
+                        Product updates for products you've purchased or starred
+                      </label>
+                    </div>
+                    <div class="form-check py-3">
+                      <input class="form-check-input" type="checkbox" value="" id="Check-4" checked>
+                      <label class="form-check-label" for="Check-4">
+                        Information on and promotional offers
+                      </label>
+                    </div>
+                    <div class="form-check py-3">
+                      <input class="form-check-input" type="checkbox" value="" id="Check-5">
+                      <label class="form-check-label" for="Check-5">
+                        Security and account alerts
+                      </label>
+                    </div>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- profile content -->
+        <div class="tab-pane fade p-3" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+          <div class="row">
+            <div class="col col-md-5 col-sm-12">
+              <div class="card p-3 m-3">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5>
+                      Profile Image
+                    </h5>
+                  </div>
+                  <div class="card-subtitle">
+                    This image will be publicly visible to all users.
+                  </div>
+                  <div class="image text-center my-3">
+                    <figure class="figure">
+                      <img src="../images/38_afi_article1_caring-for-a-kitten-tips-for-the-first-month.webp"
+                        width="200px" height="300px" class="figure-img img-fluid rounded-circle" alt="...">
+                      <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                    </figure>
+
+                  </div>
+                  <div class="button text-center">
+
+                    <button class="btn" style="background-color: blueviolet; color: white; font-weight: bold;">Upload
+                      new Image
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-upload text-white" viewBox="0 0 16 16">
+                        <path
+                          d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                        <path
+                          d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708l3-3z" />
+                      </svg></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-md-7 col-sm-12">
+              <div class="card p-3 m-3">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5>Account details</h5>
+                  </div>
+                  <div class="card-subtitle">
+                    Review and update your account information below
+                  </div>
+                  <div class="row my-3">
+                    <div class="form-floating mb-3 col col-sm-12">
+                      <input class="form-control" id="username" placeholder="Username">
+                      <label for="username">Username</label>
+                    </div>
+
+                    <div class="form-floating mb-3 col col-sm-6">
+                      <input class="form-control" id="firstname" placeholder="First name">
+                      <label for="firstname">First name</label>
+                    </div>
+
+                    <div class="form-floating mb-3 col col-sm-6">
+                      <input class="form-control" id="lastname" placeholder="Last name">
+                      <label for="lastname">Last name</label>
+                    </div>
+
+                    <div class="form-floating mb-3 col col-sm-6">
+                      <input class="form-control" id="organizationname" placeholder="Organization name">
+                      <label for="organizationname">Organization name</label>
+                    </div>
+
+                    <div class="form-floating mb-3 col col-sm-6">
+                      <input class="form-control" id="location" placeholder="Location">
+                      <label for="location">Location</label>
+                    </div>
+
+                    <div class="form-floating mb-3 col col-sm-12">
+                      <input class="form-control" id="location-2" placeholder="Location">
+                      <label for="location-2">Location</label>
+                    </div>
+
+                    <div class="form-floating mb-3 col col-sm-6">
+                      <input class="form-control" id="phone-number" placeholder="Phone number">
+                      <label for="phone-number">Phone number</label>
+                    </div>
+
+                    <div class="form-floating mb-3 col col-sm-6">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>January</option>
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">july</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">Novermber</option>
+                        <option value="11">December</option>
+                      </select>
+                    </div>
+
+                    <div class="btn-toolbar justify-content-between p-3" role="toolbar"
+                      aria-label="Toolbar with button groups">
+                      <div class="input-group">
+                      </div>
+                      <div class="btn-group" role="group" aria-label="First group">
+                        <button class="btn" style="background-color: blueviolet; color: white; font-weight: bold;">SAVE
+                          CHANGES</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- security content -->
+        <div class="tab-pane show active fade p-3" id="nav-security" role="tabpanel" aria-labelledby="nav-security-tab">
+          <div class="row g-4">
+            <div class="col col-md-7 col-sm-12">
+              <div class="card">
+                <div class="card p-3">
+                  <div class="card-body">
+                    <div class="card-title">
+                      <h5>Change Password</h5>
+                    </div>
+                    <div class="card-subtitle">
+                      New passwords must contain at least 8 characters.
+                    </div>
+                    <div class="row my-3">
+                      <div class="form-floating mb-3 col col-sm-12">
+                        <input class="form-control" id="current" placeholder="Current Password">
+                        <label for="current">Current Password</label>
+                      </div>
+
+                      <div class="form-floating mb-3 col col-sm-6">
+                        <input class="form-control" id="new" placeholder="New Password">
+                        <label for="new">New Password</label>
+                      </div>
+
+                      <div class="form-floating mb-3 col col-sm-12">
+                        <input class="form-control" id="confirm" placeholder="Confirm New Password">
+                        <label for="confirm">Confirm New Password</label>
+                      </div>
+
+
+
+
+
+                      <div class="btn-toolbar justify-content-between p-3" role="toolbar"
+                        aria-label="Toolbar with button groups">
+                        <div class="input-group">
+                        </div>
+                        <div class="btn-group" role="group" aria-label="First group">
+                          <button class="btn"
+                            style="background-color: blueviolet; color: white; font-weight: bold;">RESET
+                            PASSWORD</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-md-5 col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5>Two-Factor Authentication</h5>
+                  </div>
+                  <div class="card-subtitle">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam temporibus labore adipisci
+                    sapiente quidem provident voluptatem tenetur aut quaerat eveniet dicta modi, expedita porro repellat
+                    voluptatibus optio natus reprehenderit aliquam.
+                  </div>
+
+                  <div class="radios my-5 px-3">
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1" checked>
+                      <label class="form-check-label" for="inlineRadio1">On</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                      <label class="form-check-label" for="inlineRadio2">Off</label>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-md-7 col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5>Security preferences</h5>
+                  </div>
+                  <div class="card-subtitle">
+                    Change how other people view your account
+                  </div>
+                  <div class="privacy my-5">
+                    <h6>Account Privacy</h6>
+                    <div class="card-subtitle">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, labore?
+                    </div>
+                  </div>
+
+                  <div class="radios my-5 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                        value="option1" checked>
+                      <label class="form-check-label" for="inlineRadio1">Public</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                        value="option2">
+                      <label class="form-check-label" for="inlineRadio2">Private</label>
+                    </div>
+
+                  </div>
+
+                  <hr>
+
+                  <div class="privacy my-5">
+                    <h6>Data Sharing</h6>
+                    <div class="card-subtitle">
+                      Lorem ipsum dolor sit, amet consectetur adipisicing elit. At, labore?
+                    </div>
+                  </div>
+
+                  <div class="radios my-5 px-3">
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio3"
+                        value="option1" checked>
+                      <label class="form-check-label" for="inlineRadio3">Yes</label>
+                    </div>
+                    <div class="form-check">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions1" id="inlineRadio4"
+                        value="option2">
+                      <label class="form-check-label" for="inlineRadio4">No</label>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col col-md-5 col-sm-12">
+              <div class="card">
+                <div class="card-body">
+                  <div class="card-title">
+                    <h5> Delete Account</h5>
+                  </div>
+                  <div class="card-subtitle ">
+                    Choose which types of email updates you will receive
+                  </div>
+
+                  <a href="#" style="text-decoration: none;">
+                    <h6 style="font-size: 15PX;" class="text-danger my-5">UNSUBSCRIBE FROM ALL NOTIFICATIONS</h6>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer style="border-top: 1px solid;">
+          <div class="btn-toolbar justify-content-between p-3" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="input-group">
+              <p>Copyright &copy; 2023</p>
+            </div>
+            <div class="btn-group" role="group" aria-label="First group">
+              <a href="#" class="mx-3" style="color: blueviolet; text-decoration: none;">Privacy & policy</a>
+              <a href="#" style="color: blueviolet; text-decoration: none;">terms & conditions</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+
+
+
+
+  </main>
+  <!--Main layout-->
+
+  <script src="../bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
